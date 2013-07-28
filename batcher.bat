@@ -19,6 +19,8 @@ echo ^|quit^|: To quit ^| help: View help
 echo ^|exit^| ^|
 echo ---------------------------------
 echo run : run command ^|cmd: cmd.exe win
+echo ---------------------------------
+echo     fulls : enable fullscreen
 set /p comm=content goto^>
 goto %comm%
 :cmd
@@ -38,11 +40,16 @@ echo ^>HLPCMD:view help of a command
 echo ^>RUN:goto running UI
 set /p comm=help^>
 goto %comm%
+:fulls
+echo exit|%ComSpec% /k prompt e 100 B4 00 B0 12 CD 10 B0 03 CD 10 CD 20 $_g$_q$_|debug>nul 
+chcp 437>nul 
+graftabl 936>nul 
+goto content
 :THIS
 cls
 color f6
 title help of this program
-ECHO Designed by ZBOT&LeeJAJA
+ECHO Designed by ZBOT^&LeeJAJA
 echo This batch file helps you to
 echo program with batch(win dos)
 echo easily.
