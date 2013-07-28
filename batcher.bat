@@ -13,7 +13,7 @@ goto run
 :content
 cls
 color f4
-title Batcher v1.1Unrealised(By ZBOT&LeeJAJA)
+title Batcher v1.1Unrealised(By ZBOT^&LeeJAJA)
 echo [^>--------------content-------------^<]
 echo TYPE:
 echo ^|quit^|: To quit ^| help: View help
