@@ -15,12 +15,10 @@ cls
 color f4
 echo [^>--------------content-------------^<]
 echo TYPE:
-echo ^|quit^|: To quit ^| help: View
-help
+echo ^|quit^|: To quit ^| help: View help
 echo ^|exit^| ^|
 echo ---------------------------------
-echo 
-run : run command ^|cmd: cmd.exe win
+echo run : run command ^|cmd: cmd.exe win
 set /p comm=content goto^>
 goto %comm%
 :cmd
