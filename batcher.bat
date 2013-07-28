@@ -5,8 +5,7 @@ color f3
 title batch instant
 set /p comm=^>
 cls
-echo type "goto content" to view
-content
+echo type "goto content" to view content
 echo ^<-----result-----^>
 %comm%
 goto run
